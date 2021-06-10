@@ -1,0 +1,251 @@
+#gallery-reviews{
+    margin-bottom: 70px;
+
+    #table3{
+        background-image: url(../img/Gallery&Reviews/Table_3.jpg);
+        height: 170px;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include md{
+            width: 800px;
+            height:200px;
+        }
+
+        @include lg{
+            width: 1200px;
+            height:300px;
+        }
+    }
+
+      h1{
+        margin-left: 8px;
+        color: $BrowGrass;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+
+        @include md{
+            margin-left: 70px;
+            font-size: 60px;
+        }
+
+        @include lg{
+            margin-left: 120px;
+        }
+
+        @include xl{
+            margin-left: 240px;
+        }
+    }
+
+    #quotes{
+
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        list-style-type: none;
+        width: 300px;
+        font-family: 'Lora', serif;
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: ". quotes .";
+
+        grid-area: quotes;
+        display: grid;
+        grid-template-areas: "MB";
+
+       @include md{
+            grid-template-areas: "MD MD"
+            "AB CA";
+            grid-template-columns: 300px 300px;
+            gap: 30px;
+       }
+
+       @include lg{
+            grid-template-areas: "MD AB CA";
+            grid-template-columns: 300px 300px 300px;
+
+       }
+
+       @include xl{
+            grid-template-areas: "MD AB CA";
+            grid-template-columns: 300px 300px 300px;
+       }
+
+       #MD{
+           grid-area: MD;
+           background: $BlueLagoon;
+           padding: 20px;
+           color: white;
+       }
+
+       #AB{
+            display: none;
+
+            @include md{
+                grid-area: AB;
+                display: list-item; 
+                background: $BlueLagoon;
+                padding: 20px;
+                color: white; 
+            }
+        }
+
+        #CA{
+            display: none;
+    
+            @include md{
+                grid-area: CA; 
+                display: list-item; 
+                background: $BlueLagoon;
+                padding: 20px;
+                color: white;
+            }
+        }
+
+    }
+
+    #Gallery-Images{
+        margin-top: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        list-style-type: none;
+        display: grid;
+        grid-template-columns:  375px;
+        grid-template-areas: ". Gallery-Images .";
+
+        grid-area: Gallery-Images;
+        display: grid;
+        gap:  30px;
+        grid-template-areas: "couple1";
+
+        @include md{
+            grid-template-areas: "couple2 couple4"
+            "ring1 couple4"
+            "couple1 table1";
+            grid-template-columns: 374px 374px;
+        }
+
+        @include lg{
+            grid-template-areas: "table2 table2 couple2 couple2 couple4 couple4"
+                                 "table2 table2 table1 ring1 couple4 couple4"
+                                 "couple1 couple1 couple1 couple1 couple4 couple4"
+                                 "couple1 couple1 couple1 couple1 couple4 couple4";
+            grid-template-columns: 140px 140px 140px 140px 140px 140px;
+        }
+
+        @include xl{
+            grid-template-areas: "table2 table2 couple2 couple2 couple4 couple4"
+            "table2 table2 table1 ring1 couple4 couple4"
+            "couple1 couple1 couple1 couple1 couple4 couple4"
+            "couple1 couple1 couple1 couple1 couple4 couple4";
+            grid-template-columns: 140px 140px 140px 140px 140px 140px;
+        }   
+
+        #couple1{
+            background-image: url(../img/Gallery&Reviews/Couple_1.jpg);
+            height: 225px;
+            background-size: cover;
+            background-position: center;
+            grid-area: couple1;
+    
+            @include lg{
+                height:332px;
+            }
+        }
+
+        #couple2{
+            display: none;
+            @include md{
+                display: list-item;
+                grid-area: couple2;
+                background-image: url(../img/Gallery&Reviews/Couple_2.jpg);
+                height: 225px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            @include lg{
+                height: 157px;
+            }
+        }
+
+        #couple4{
+            display: none;
+            @include md{
+                display: list-item;
+                grid-area: couple4;
+                background-image: url(../img/Gallery&Reviews/Couple_4.jpg);
+                height: 500px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            @include lg{
+                height: 674px;
+            }
+        }
+
+        #ring1{
+            display: none;
+            @include md{
+                display: list-item;
+                grid-area: ring1;
+                background-image: url(../img/Gallery&Reviews/Ring_1.jpg);
+                height: 225px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            @include lg{
+                height: 125px;
+            }
+        }
+
+        #table1{
+            display: none;
+            @include md{
+                display: list-item;
+                grid-area: table1;
+                background-image: url(../img/Gallery&Reviews/Table_1.jpg);
+                height: 225px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            @include lg{
+                height: 125px;
+            }
+        }
+
+        #table2{
+            display: none;
+            @include lg{
+                display: list-item;
+                grid-area: table2;
+                background-image: url(../img/Gallery&Reviews/Table_2.jpg);
+                height: 225px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            @include lg{
+                height: 313px;
+            }
+        }
+    }
+}

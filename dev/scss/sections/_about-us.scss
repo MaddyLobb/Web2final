@@ -1,0 +1,142 @@
+#about-us{
+
+    margin-bottom: 90px;
+
+    #mainimg{
+        background-image: url(../img/About-Us/Table_4.jpg);
+        height: 170px;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include md{
+            width: 800px;
+            height:200px;
+        }
+
+        @include lg{
+            width: 1200px;
+            height:300px;
+        }
+    }
+
+      h1{
+        margin-left: 87px;
+        color: $BrowGrass;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+
+        @include md{
+            margin-left: 70px;
+            font-size: 60px;
+        }
+
+        @include lg{
+            margin-left: 120px;
+        }
+
+        @include xl{
+            margin-left: 240px;
+        }
+    }
+
+    p{
+        width: 275px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background: $BlueLagoon;
+        padding: 20px;
+        color: white; 
+        font-family: 'Lora', serif;
+        line-height: 25px;
+        
+        @include md{
+          width: 500px;  
+        }
+  
+        @include lg{
+            width: 620px;
+        }
+  
+    }
+
+    #imgsec{    
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 364px;
+        grid-template-areas: ". images .";
+
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        grid-area: images;
+        display: grid;
+        gap: 30px;
+        grid-template-areas: "team"
+        "our-team"
+        "location"
+        "our-location";
+
+        @include md{
+            grid-template-areas: "team location"
+            "our-team our-location";
+            grid-template-columns: 364px 364px;
+        }
+        @include lg{
+            grid-template-areas: "team location"
+            "our-team our-location";
+            grid-template-columns: 502px 502px;
+        }
+
+
+        #team{
+            background-image: url(../img/About-Us/Team.jpg);
+            height: 400px;
+            background-size: cover;
+            background-position: top center;
+            grid-area: team;
+        }
+
+        #our-team{
+            grid-area: our-team;
+            color: $BrowGrass;
+            font-family: 'Lora', serif;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #location{
+            background-image: url(../img/About-Us/Map.jpg);
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            display: list-item;
+            grid-area: location;
+        }
+
+        #our-location{
+            grid-area: our-location;
+            color: $BrowGrass;
+            font-family: 'Lora', serif;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+
+        }
+
+        img{
+            width: 364px;
+
+            @include lg{
+                width: 502px;
+            }
+        }
+
+    }
+ 
+}

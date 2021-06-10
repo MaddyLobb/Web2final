@@ -1,0 +1,54 @@
+/* =============
+    Footer
+============= */
+footer{
+    background: $TA-DA;
+    padding: 20px;
+    color: white;
+    font-family: 'Lora', serif;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: ". footer .";
+
+    grid-area: footer;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "contact"
+    "smalllogo"
+    "hours";
+
+    @include md{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact{
+        grid-area: contact;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 191px;
+    }
+
+    #hours{
+        grid-area: hours;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+    }
+
+    #smalllogo{
+        width: 90px;
+        grid-area: smalllogo;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

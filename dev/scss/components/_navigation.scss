@@ -1,0 +1,42 @@
+/* =============
+    Navigation
+============= */
+
+#nav-container {
+
+    ul {
+        height: 100%;
+
+    
+            display: flex;
+        
+
+        li {
+            margin-bottom: 5px;
+
+
+                align-items: center;
+                border-right: 2px solid $Fern;
+                display: flex;
+                margin-bottom: 0px;
+            
+
+            a:link,
+            a:visited {
+                color: $Fern;
+                font-family: 'Lora', serif;
+                padding: 0 10px;
+                text-decoration: none;
+                transition: 0.25s;
+             
+                    color: $Fern;
+                
+
+                &:hover,
+                &:active {
+                    color: $Fern;
+                }
+            }
+        }
+    }
+}

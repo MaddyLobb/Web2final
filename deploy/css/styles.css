@@ -1,0 +1,1293 @@
+/* =============
+    Mixins
+============= */
+/* ---------------- Font Sizing ---------------- */
+html {
+  font-size: 100%;
+}
+
+/* ---------------- Media Queries ---------------- */
+/* =============
+    Variables
+============= */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* =============
+    Base
+============= */
+/* =============
+    Typography
+============= */
+body {
+  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
+}
+
+/* =============
+    Buttons
+============= */
+/* =============
+    Forms
+============= */
+[type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
+  box-shadow: none;
+}
+
+[type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus, textarea:focus {
+  box-shadow: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  -webkit-appearance: none;
+}
+
+/* =============
+    Navigation
+============= */
+#nav-container ul {
+  height: 100%;
+  display: flex;
+}
+#nav-container ul li {
+  margin-bottom: 5px;
+  align-items: center;
+  border-right: 2px solid #676653;
+  display: flex;
+  margin-bottom: 0px;
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: #676653;
+  font-family: "Lora", serif;
+  padding: 0 10px;
+  text-decoration: none;
+  transition: 0.25s;
+  color: #676653;
+}
+#nav-container ul li a:link:hover, #nav-container ul li a:link:active,
+#nav-container ul li a:visited:hover,
+#nav-container ul li a:visited:active {
+  color: #676653;
+}
+
+/* =============
+    Header
+============= */
+header ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* =============
+    Footer
+============= */
+footer {
+  background: #A7A58D;
+  padding: 20px;
+  color: white;
+  font-family: "Lora", serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: ". footer .";
+  grid-area: footer;
+  display: grid;
+  gap: 30px;
+  grid-template-areas: "contact" "smalllogo" "hours";
+}
+@media (min-width: 768px) {
+  footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+footer #contact {
+  grid-area: contact;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 191px;
+}
+footer #hours {
+  grid-area: hours;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+footer #smalllogo {
+  width: 90px;
+  grid-area: smalllogo;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-us {
+  margin-bottom: 90px;
+}
+#about-us #mainimg {
+  background-image: url(../img/About-Us/Table_4.jpg);
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #about-us #mainimg {
+    width: 800px;
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  #about-us #mainimg {
+    width: 1200px;
+    height: 300px;
+  }
+}
+#about-us h1 {
+  margin-left: 87px;
+  color: #CEA074;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  #about-us h1 {
+    margin-left: 70px;
+    font-size: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  #about-us h1 {
+    margin-left: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  #about-us h1 {
+    margin-left: 240px;
+  }
+}
+#about-us p {
+  width: 275px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #6C7F85;
+  padding: 20px;
+  color: white;
+  font-family: "Lora", serif;
+  line-height: 25px;
+}
+@media (min-width: 768px) {
+  #about-us p {
+    width: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  #about-us p {
+    width: 620px;
+  }
+}
+#about-us #imgsec {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 364px;
+  grid-template-areas: ". images .";
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-area: images;
+  display: grid;
+  gap: 30px;
+  grid-template-areas: "team" "our-team" "location" "our-location";
+}
+@media (min-width: 768px) {
+  #about-us #imgsec {
+    grid-template-areas: "team location" "our-team our-location";
+    grid-template-columns: 364px 364px;
+  }
+}
+@media (min-width: 1024px) {
+  #about-us #imgsec {
+    grid-template-areas: "team location" "our-team our-location";
+    grid-template-columns: 502px 502px;
+  }
+}
+#about-us #imgsec #team {
+  background-image: url(../img/About-Us/Team.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: top center;
+  grid-area: team;
+}
+#about-us #imgsec #our-team {
+  grid-area: our-team;
+  color: #CEA074;
+  font-family: "Lora", serif;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+#about-us #imgsec #location {
+  background-image: url(../img/About-Us/Map.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: list-item;
+  grid-area: location;
+}
+#about-us #imgsec #our-location {
+  grid-area: our-location;
+  color: #CEA074;
+  font-family: "Lora", serif;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+#about-us #imgsec img {
+  width: 364px;
+}
+@media (min-width: 1024px) {
+  #about-us #imgsec img {
+    width: 502px;
+  }
+}
+
+#gallery-reviews {
+  margin-bottom: 70px;
+}
+#gallery-reviews #table3 {
+  background-image: url(../img/Gallery&Reviews/Table_3.jpg);
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #gallery-reviews #table3 {
+    width: 800px;
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery-reviews #table3 {
+    width: 1200px;
+    height: 300px;
+  }
+}
+#gallery-reviews h1 {
+  margin-left: 8px;
+  color: #CEA074;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  #gallery-reviews h1 {
+    margin-left: 70px;
+    font-size: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery-reviews h1 {
+    margin-left: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  #gallery-reviews h1 {
+    margin-left: 240px;
+  }
+}
+#gallery-reviews #quotes {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  width: 300px;
+  font-family: "Lora", serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: ". quotes .";
+  grid-area: quotes;
+  display: grid;
+  grid-template-areas: "MB";
+}
+@media (min-width: 768px) {
+  #gallery-reviews #quotes {
+    grid-template-areas: "MD MD" "AB CA";
+    grid-template-columns: 300px 300px;
+    gap: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery-reviews #quotes {
+    grid-template-areas: "MD AB CA";
+    grid-template-columns: 300px 300px 300px;
+  }
+}
+@media (min-width: 1200px) {
+  #gallery-reviews #quotes {
+    grid-template-areas: "MD AB CA";
+    grid-template-columns: 300px 300px 300px;
+  }
+}
+#gallery-reviews #quotes #MD {
+  grid-area: MD;
+  background: #6C7F85;
+  padding: 20px;
+  color: white;
+}
+#gallery-reviews #quotes #AB {
+  display: none;
+}
+@media (min-width: 768px) {
+  #gallery-reviews #quotes #AB {
+    grid-area: AB;
+    display: list-item;
+    background: #6C7F85;
+    padding: 20px;
+    color: white;
+  }
+}
+#gallery-reviews #quotes #CA {
+  display: none;
+}
+@media (min-width: 768px) {
+  #gallery-reviews #quotes #CA {
+    grid-area: CA;
+    display: list-item;
+    background: #6C7F85;
+    padding: 20px;
+    color: white;
+  }
+}
+#gallery-reviews #Gallery-Images {
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-areas: ". Gallery-Images .";
+  grid-area: Gallery-Images;
+  display: grid;
+  gap: 30px;
+  grid-template-areas: "couple1";
+}
+@media (min-width: 768px) {
+  #gallery-reviews #Gallery-Images {
+    grid-template-areas: "couple2 couple4" "ring1 couple4" "couple1 table1";
+    grid-template-columns: 374px 374px;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery-reviews #Gallery-Images {
+    grid-template-areas: "table2 table2 couple2 couple2 couple4 couple4" "table2 table2 table1 ring1 couple4 couple4" "couple1 couple1 couple1 couple1 couple4 couple4" "couple1 couple1 couple1 couple1 couple4 couple4";
+    grid-template-columns: 140px 140px 140px 140px 140px 140px;
+  }
+}
+@media (min-width: 1200px) {
+  #gallery-reviews #Gallery-Images {
+    grid-template-areas: "table2 table2 couple2 couple2 couple4 couple4" "table2 table2 table1 ring1 couple4 couple4" "couple1 couple1 couple1 couple1 couple4 couple4" "couple1 couple1 couple1 couple1 couple4 couple4";
+    grid-template-columns: 140px 140px 140px 140px 140px 140px;
+  }
+}
+#gallery-reviews #Gallery-Images #couple1 {
+  background-image: url(../img/Gallery&Reviews/Couple_1.jpg);
+  height: 225px;
+  background-size: cover;
+  background-position: center;
+  grid-area: couple1;
+}
+@media (min-width: 1024px) {
+  #gallery-reviews #Gallery-Images #couple1 {
+    height: 332px;
+  }
+}
+#gallery-reviews #Gallery-Images #couple2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #gallery-reviews #Gallery-Images #couple2 {
+    display: list-item;
+    grid-area: couple2;
+    background-image: url(../img/Gallery&Reviews/Couple_2.jpg);
+    height: 225px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery-reviews #Gallery-Images #couple2 {
+    height: 157px;
+  }
+}
+#gallery-reviews #Gallery-Images #couple4 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #gallery-reviews #Gallery-Images #couple4 {
+    display: list-item;
+    grid-area: couple4;
+    background-image: url(../img/Gallery&Reviews/Couple_4.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery-reviews #Gallery-Images #couple4 {
+    height: 674px;
+  }
+}
+#gallery-reviews #Gallery-Images #ring1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #gallery-reviews #Gallery-Images #ring1 {
+    display: list-item;
+    grid-area: ring1;
+    background-image: url(../img/Gallery&Reviews/Ring_1.jpg);
+    height: 225px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery-reviews #Gallery-Images #ring1 {
+    height: 125px;
+  }
+}
+#gallery-reviews #Gallery-Images #table1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #gallery-reviews #Gallery-Images #table1 {
+    display: list-item;
+    grid-area: table1;
+    background-image: url(../img/Gallery&Reviews/Table_1.jpg);
+    height: 225px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery-reviews #Gallery-Images #table1 {
+    height: 125px;
+  }
+}
+#gallery-reviews #Gallery-Images #table2 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #gallery-reviews #Gallery-Images #table2 {
+    display: list-item;
+    grid-area: table2;
+    background-image: url(../img/Gallery&Reviews/Table_2.jpg);
+    height: 225px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery-reviews #Gallery-Images #table2 {
+    height: 313px;
+  }
+}
+
+#hero #text {
+  color: #936F4B;
+  width: 299px;
+  font-family: "Lora", serif;
+  line-height: 25px;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #hero #text {
+    width: 492px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero #text {
+    width: 620px;
+  }
+}
+
+#our-packages {
+  margin-bottom: 90px;
+}
+#our-packages div {
+  background-image: url(../img/Our-Packages/Arrangement_1.jpg);
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #our-packages div {
+    width: 800px;
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  #our-packages div {
+    width: 1200px;
+    height: 300px;
+  }
+}
+#our-packages #video {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #our-packages #video {
+    width: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  #our-packages #video {
+    width: 780px;
+  }
+}
+#our-packages h1 {
+  margin-left: 87px;
+  color: #CEA074;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  #our-packages h1 {
+    margin-left: 70px;
+    font-size: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  #our-packages h1 {
+    margin-left: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  #our-packages h1 {
+    margin-left: 240px;
+  }
+}
+#our-packages #leaf {
+  margin-top: 30px;
+  list-style-type: none;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: ". leaf .";
+  grid-area: leaf;
+  display: grid;
+  gap: 30px;
+  grid-template-areas: "leaf1" "leaf2" "leaf3" "leaf4" "leaf5";
+  width: 300px;
+}
+@media (min-width: 768px) {
+  #our-packages #leaf {
+    grid-template-areas: "leaf1 leaf4" "leaf2 leaf5" "leaf3 .";
+    grid-template-columns: 300px 300px;
+  }
+}
+@media (min-width: 1024px) {
+  #our-packages #leaf {
+    grid-template-areas: "leaf1 leaf4" "leaf2 leaf5" "leaf3 .";
+    grid-template-columns: 400px 400px;
+  }
+}
+#our-packages #leaf #leaf1 {
+  grid-area: leaf1;
+  display: list-item;
+  background: #6C7F85;
+  padding: 20px;
+  color: white;
+  font-family: "Lora", serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#our-packages #leaf #leaf2 {
+  grid-area: leaf2;
+  display: list-item;
+  background: #6C7F85;
+  padding: 20px;
+  color: white;
+  font-family: "Lora", serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#our-packages #leaf #leaf3 {
+  grid-area: leaf3;
+  display: list-item;
+  background: #6C7F85;
+  padding: 20px;
+  color: white;
+  font-family: "Lora", serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#our-packages #leaf #leaf4 {
+  grid-area: leaf4;
+  display: list-item;
+  background: #6C7F85;
+  padding: 20px;
+  color: white;
+  font-family: "Lora", serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#our-packages #leaf #leaf5 {
+  grid-area: leaf5;
+  display: list-item;
+  background: #6C7F85;
+  padding: 20px;
+  color: white;
+  font-family: "Lora", serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#services div {
+  background-image: url(../img/Our-Services/Ring_2.jpg);
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #services div {
+    width: 800px;
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  #services div {
+    width: 1200px;
+    height: 300px;
+  }
+}
+#services h1 {
+  margin-left: 87px;
+  color: #CEA074;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  #services h1 {
+    font-size: 60px;
+    margin-left: 70px;
+  }
+}
+@media (min-width: 1024px) {
+  #services h1 {
+    margin-left: 120px;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #services h1 {
+    margin-left: 240px;
+  }
+}
+#services #types {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 90px;
+  list-style-type: none;
+  background: #6C7F85;
+  padding: 20px;
+  color: white;
+  font-family: "Lora", serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: ". types .";
+  grid-area: types;
+  display: grid;
+  gap: 30px;
+  grid-template-areas: "planning" "styling";
+}
+@media (min-width: 768px) {
+  #services #types {
+    width: 620px;
+    grid-template-areas: "planning styling";
+    grid-template-columns: auto;
+  }
+}
+@media (min-width: 1024px) {
+  #services #types {
+    grid-template-areas: "planning styling";
+    grid-template-columns: auto;
+    width: 780px;
+  }
+}
+@media (min-width: 1200px) {
+  #services #types {
+    grid-template-areas: "planning styling";
+    grid-template-columns: auto;
+    width: 780px;
+  }
+}
+#services #types #planning {
+  grid-area: planning;
+}
+#services #types #styling {
+  grid-area: styling;
+}
+
+#wedding-consults {
+  margin-bottom: 90px;
+}
+#wedding-consults #mainimg {
+  background-image: url(../img/Wedding_Consults/Venue_2.jpg);
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #wedding-consults #mainimg {
+    width: 800px;
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-consults #mainimg {
+    width: 1200px;
+    height: 300px;
+  }
+}
+#wedding-consults h1 {
+  margin-left: 87px;
+  color: #CEA074;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  #wedding-consults h1 {
+    margin-left: 70px;
+    font-size: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-consults h1 {
+    margin-left: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  #wedding-consults h1 {
+    margin-left: 240px;
+  }
+}
+#wedding-consults #group {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: ". group .";
+  grid-area: group;
+  display: grid;
+  gap: 30px;
+  grid-template-areas: "Consults" "Sign-Up-Consults" "forms-consults";
+}
+@media (min-width: 768px) {
+  #wedding-consults #group {
+    grid-template-areas: "Consults forms-consults";
+    grid-template-columns: 350px;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-consults #group {
+    grid-template-areas: "Consults forms-consults";
+    grid-template-columns: 450px;
+    gap: 30px;
+  }
+}
+#wedding-consults #group #Consults {
+  grid-area: Consults;
+}
+#wedding-consults #group #forms-consults {
+  grid-area: forms-consults;
+}
+@media (min-width: 768px) {
+  #wedding-consults #group #forms-consults {
+    margin-top: 175px;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-consults #group #forms-consults {
+    margin-top: 140px;
+  }
+}
+#wedding-consults #group ul {
+  list-style-type: none;
+  width: 291px;
+  margin-bottom: 0px;
+  background: #6C7F85;
+  padding: 20px;
+  color: white;
+  font-family: "Lora", serif;
+  line-height: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #wedding-consults #group ul {
+    width: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  #wedding-consults #group ul {
+    width: 381px;
+  }
+}
+@media (min-width: 1200px) {
+  #wedding-consults #group ul {
+    width: 381px;
+  }
+}
+#wedding-consults #group #Sign-Up-Consults {
+  color: #CEA074;
+  font-family: "Lora", serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#wedding-consults #group input[type=text] {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 2px solid #676653;
+  border-radius: 20px;
+  color: #CEA074;
+  font-family: "Lora", serif;
+  font-size: 18px;
+}
+#wedding-consults #group textarea {
+  width: 400px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #676653;
+  border-radius: 20px;
+  resize: none;
+  margin-top: 4px;
+  color: #CEA074;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#wedding-consults #group input[type=button] {
+  background-color: #676653;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#heroimg {
+  background-image: url(../img/Heroimg/Couple_5.jpg);
+  height: 760px;
+  background-size: cover;
+  background-position: bottom center;
+}
+#heroimg #logo {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 250PX;
+}
+@media (min-width: 1024px) {
+  #heroimg #logo {
+    padding-top: 100px;
+  }
+}

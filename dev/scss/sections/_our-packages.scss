@@ -1,0 +1,163 @@
+#our-packages{
+
+    margin-bottom: 90px;
+
+    div{
+        background-image: url(../img/Our-Packages/Arrangement_1.jpg);
+        height: 170px;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include md{
+            width: 800px;
+            height:200px;
+        }
+
+        @include lg{
+            width: 1200px;
+            height:300px;
+        }
+    }
+
+      #video{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      
+          @include md{
+              width: 500px;
+          }
+    
+          @include lg{
+              width: 780px;
+          }
+        }  
+
+    h1{
+        margin-left: 87px;
+        color: $BrowGrass;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+
+        @include md{
+            margin-left: 70px;
+            font-size: 60px;
+        }
+
+        @include lg{
+            margin-left: 120px;
+        }
+
+        @include xl{
+            margin-left: 240px;
+        }
+    }
+
+    #leaf{
+        margin-top: 30px;
+        list-style-type: none;
+
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: ". leaf .";
+
+        grid-area: leaf;
+        display: grid;
+        gap: 30px;
+        grid-template-areas: "leaf1"
+        "leaf2"
+        "leaf3"
+        "leaf4"
+        "leaf5";
+        width: 300px;
+
+        @include md{
+            grid-template-areas: "leaf1 leaf4"
+            "leaf2 leaf5"
+            "leaf3 .";
+            grid-template-columns: 300px 300px;
+        }
+
+        @include lg{
+            grid-template-areas: "leaf1 leaf4"
+            "leaf2 leaf5"
+            "leaf3 .";
+            grid-template-columns: 400px 400px;
+        }
+
+
+        #leaf1{
+            grid-area: leaf1;
+            display: list-item;
+            background: $BlueLagoon;
+            padding: 20px;
+            color: white;
+            font-family: 'Lora', serif;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        #leaf2{
+            grid-area: leaf2;
+            display: list-item;
+            background: $BlueLagoon;
+            padding: 20px;
+            color: white;
+            font-family: 'Lora', serif;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #leaf3{
+            grid-area: leaf3;
+            display: list-item;
+            background: $BlueLagoon;
+            padding: 20px;
+            color: white;
+            font-family: 'Lora', serif;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #leaf4{
+            grid-area: leaf4;
+            display: list-item;
+            background: $BlueLagoon;
+            padding: 20px;
+            color: white;
+            font-family: 'Lora', serif;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #leaf5{
+            grid-area: leaf5;
+            display: list-item;
+            background: $BlueLagoon;
+            padding: 20px;
+            color: white;
+            font-family: 'Lora', serif;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+}

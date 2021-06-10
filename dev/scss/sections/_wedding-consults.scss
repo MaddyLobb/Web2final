@@ -1,0 +1,174 @@
+#wedding-consults{
+
+    margin-bottom: 90px;
+
+    #mainimg{
+        background-image: url(../img/Wedding_Consults/Venue_2.jpg);
+        height: 170px;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include md{
+            width: 800px;
+            height:200px;
+        }
+
+        @include lg{
+            width: 1200px;
+            height:300px;
+        }
+    }
+
+      h1{
+        margin-left: 87px;
+        color: $BrowGrass;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+
+        @include md{
+            margin-left: 70px;
+            font-size: 60px;
+        }
+
+        @include lg{
+            margin-left: 120px;
+        }
+
+        @include xl{
+            margin-left: 240px;
+        }
+    }
+
+
+    #group{
+
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: ". group .";
+
+        grid-area: group;
+        display: grid;
+        gap: 30px;
+        grid-template-areas: "Consults"
+        "Sign-Up-Consults"
+        "forms-consults";
+
+        @include md{
+            grid-template-areas:"Consults forms-consults";
+            grid-template-columns: 350px;
+        }
+        @include lg{
+            grid-template-areas:"Consults forms-consults";
+            grid-template-columns: 450px;
+            gap: 30px;
+        }
+
+        #Consults{
+           grid-area: Consults;
+           
+        }
+
+        #forms-consults{
+            grid-area: forms-consults;
+
+            @include md{
+                margin-top: 175px;
+            }
+
+            @include lg{
+                margin-top: 140px;
+            }
+            
+        }
+        
+
+        ul{
+            list-style-type: none;
+            width: 291px;
+            margin-bottom: 0px;
+            background: $BlueLagoon;
+            padding: 20px;
+            color: white;
+            font-family: 'Lora', serif;
+            line-height: 20px;
+ 
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+ 
+            @include md{ 
+                width: 300px;  
+            }
+ 
+            @include lg{
+                width: 381px;
+            }
+ 
+            @include xl{
+                width: 381px;
+            }
+        }
+
+        #Sign-Up-Consults{
+            color: $BrowGrass;
+            font-family: 'Lora', serif;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        input[type=text] {
+            width: 200px;
+            padding: 12px 20px;
+            margin: 4px 0;
+            box-sizing: border-box;
+            border: 2px solid $Fern;
+            border-radius: 20px;
+            color: $BrowGrass;
+            font-family: 'Lora', serif;
+            font-size: 18px;
+            
+            
+        }
+    
+        textarea {
+            width: 400px;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid $Fern;
+            border-radius: 20px;
+            resize: none;
+            margin-top: 4px;
+            color: $BrowGrass;
+            font-family: 'Lora', serif;
+            font-size: 18px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        input[type=button]{
+            background-color: $Fern;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-family: 'Lora', serif;
+            font-size: 18px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

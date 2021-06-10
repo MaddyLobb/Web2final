@@ -1,0 +1,18 @@
+#heroimg{
+    background-image: url(../img/Heroimg/Couple_5.jpg);
+    height: 760px;
+    background-size: cover;
+    background-position: bottom center;
+
+    #logo{
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 250PX;
+
+        @include lg{
+            padding-top: 100px;
+        }
+    }
+}
